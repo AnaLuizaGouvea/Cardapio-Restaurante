@@ -2,11 +2,12 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Raleway', sans-serif;
-
+    
 }
 body{
     background-color: #f0eded;
 }
+/*INICIO DO HEADER*/
 header{
     padding: 10px;
     padding-left: 20px;
@@ -44,6 +45,12 @@ header{
 }
 /*FIM HEADER*/
 
+/*INICIO MAIN*/
+
+/*INICIO CONTENT*/
+.controller{
+    justify-content: center;
+}
 .content{
     background-color: #5f7e5f;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -56,30 +63,78 @@ header{
     height: 200px;
     margin: 22px;    
 }
-.carrossel{
+.slider{
     background-color: #D9D9D9;
     width: 400px;
     height: 200px;
     margin: 22px;
+    overflow: hidden;
+}
+.slides{
+    width: 200%;
+    height: 200px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: -200%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 400px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 359px;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #f0eded;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .05s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+.manual-btn:hover{
+    background-color: #f0eded;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -50%;
+}
+#radio3:checked ~ .first{
+    margin-left: -100%;
+}
+#radio4:checked ~ .first{
+    margin-left: -150%;
 }
 /*FIM CONTENT*/
 
-.controller{
-    justify-content: center;
-}
+/*INICIO CARDS*/
 .cards{
     display: flex;
-    margin-top: 35px;
-    margin-bottom: 5px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin: auto;
     max-width: 845px;    
     flex-wrap: wrap; /*quebra a linha dps que passa do limite*/
-    margin-left: 250px;
     justify-content: center;    
 }
 .card{
     width: 185px;
     height: 300px;
     margin: 10px;
+
     background-color: #5f7e5f;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -103,25 +158,24 @@ header{
 }
 .card p{
     font-size: 13px;
-    
+    margin: 3px;
 }
 .card button{
     font-size: 10px;
     margin: 5px;
     height: 23px;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 3px;
     background-color: antiquewhite;
     border: 1px solid antiquewhite;
     box-shadow: 7px 3px 7px rgba(2, 1, 1, 0.25);
     border-radius: 3px;
 }
-
-/*FIM DOS CARDS*/
+/*FIM CARDS*/
 
 footer{
     bottom: 0;
     height: 65px;
-    margin-top: 60px;
+    
     background-color: #8caf8c;
 }

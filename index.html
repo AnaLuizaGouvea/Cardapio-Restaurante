@@ -26,15 +26,53 @@
         <div class="controller">
             <section class="content">
                 <div class="logo2"><img src="ass/logo2.png" alt="Logo" ></div>
-                <div class="carrossel"></div>
+                <div class="slider">
+
+                    <div class="slides">
+                        <input type="radio" nome="radio-btn" id="radio1">
+                        <input type="radio" nome="radio-btn" id="radio2">
+                        <input type="radio" nome="radio-btn" id="radio3">
+                        <input type="radio" nome="radio-btn" id="radio4">
+                    
+                        <div class="slide first">
+                            <img src="ass/slider1.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="ass/pizzaBrigadeiro.jpeg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="ass/slider1.jpg" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="ass/pizzaBrigadeiro.jpeg" alt="Image 4">
+                        </div>
+
+                        <div class="nav-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+
+                        <div class="manual-navigation">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+
+                    </div>    
+
+                </div>
+
             </section>
             
             <section class="cards">
                 <div class="card">
                     <img src="ass/pizzaFrango.jpg" class="card-img">
                     <div class="card-body">
-                        <h1 class="card-title">Pizza Frango com Catupry</h1>
-                        <h3 class="card-text">Ingredientes: </h3>
+                        <h1>Pizza Frango com Catupry</h1>
+                        <h3>Ingredientes: </h3>
                         <p>Mozzarella especial, peito de frango, catupiry e orégano.</p>
                         <button>Tamanho M</button>
                         <button>Tamanho G</button>
@@ -61,7 +99,7 @@
                     <img src="ass/pizzaPortuguesa.jpeg">
                     <h1>Pizza Portuguesa</h1>
                     <h3>Ingredientes: </h3>
-                    <p>Mozzarella especial, presunto, calabresa, cebola, ovo, azeitona preta, tomate e orégano</p>
+                    <p>Mozzarella especial, azeitona, ovo, tomate, orégano</p>
                     <button>Tamanho M</button>
                     <button>Tamanho G</button>
                 </div>
@@ -93,17 +131,19 @@
                     <img src="ass/pizzaNM.jpg">
                     <h1>Pizza Nutella e Morango</h1>
                     <h3>Ingredientes: </h3>
-                    <p>Nutella com leite em pó ninho</p>
+                    <p>Nutella com leite em pó ninho e morango</p>
                     <button>Tamanho M</button>
                     <button>Tamanho G</button>
                 </div>
             </section>
         </div>
     </main>
-    <footer>
-        <nav class="navfooter">
+    
 
-        </nav>
+    <footer>
+        <nav class="navfooter"></nav>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
