@@ -2,7 +2,6 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Raleway', sans-serif;
-    
 }
 body{
     background-color: #f0eded;
@@ -140,6 +139,11 @@ header{
     border-radius: 4px;
     text-align: center;
 }
+.cards .card:hover{
+    padding: 7px;
+    background-color: #8caf8c;
+    box-shadow: 1px black;
+}
 
 .card img{
     width: 140px;
@@ -171,11 +175,31 @@ header{
     box-shadow: 7px 3px 7px rgba(2, 1, 1, 0.25);
     border-radius: 3px;
 }
+.card button:hover{
+    margin: 7px;
+    background-color: #8caf8c;
+    box-shadow: 1px black;
+}
 /*FIM CARDS*/
 
 footer{
     bottom: 0;
-    height: 65px;
-    
+    height: 95px;
     background-color: #8caf8c;
+    display: flex; 
+    justify-content: center;  /*coluna*/
+    align-items: center; /*linha*/
 }
+footer ul{
+    list-style-type: none;
+}
+footer li{
+    margin: 20px;
+    align-items: center;
+    display: inline;
+}
+.contatofooter img{
+    height: 25px;
+    width: 25px;
+}
+
