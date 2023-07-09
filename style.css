@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Raleway', sans-serif;
+    
 }
 body{
     background-color: #f0eded;
@@ -15,6 +16,7 @@ header{
     justify-content: space-between;  /*coluna*/
     align-items: center; /*linha*/
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: auto;
 }
 .logo{
     width: 50px;
@@ -61,7 +63,8 @@ header{
 .logo2 img{
     width:200px;
     height: 200px;
-    margin: 22px;    
+    margin: 22px;
+        
 }
 .slider{
     background-color: #D9D9D9;
@@ -69,6 +72,7 @@ header{
     height: 200px;
     margin: 22px;
     overflow: hidden;
+    justify-content: center;
 }
 .slides{
     width: 200%;
@@ -92,6 +96,7 @@ header{
     margin-top: 180px;
     display: flex;
     justify-content: center;
+    width: auto;
 }
 .manual-btn{
     border: 2px solid #f0eded;
@@ -99,6 +104,7 @@ header{
     border-radius: 10px;
     cursor: pointer;
     transition: .05s;
+    justify-content: center;
 }
 .manual-btn:not(:last-child){
     margin-right: 20px;
@@ -153,53 +159,97 @@ header{
 }
 
 .card h1{
-    font-size: 14px;
+    font-size: 0.875em; /* 14px dividido por 16px */
+    margin-top: 0.1875rem;
 }
-
+    
 .card h3{
-    font-size: 13px;
-    line-height: 30px;
+    font-size: 0.8125em; /* 13px dividido por 16px /
+    line-height: 1.875rem; / 30px dividido por 16px */
+    margin-top: 0.1875rem;
 }
+    
 .card p{
-    font-size: 13px;
-    margin: 3px;
+    font-size: 0.8125em; /* 13px dividido por 16px /
+    margin: 0.1875rem; / 3px dividido por 16px */
+    margin-top: 0.1875rem;
 }
-.card button{
-    font-size: 10px;
+.card input{
+    font-size: 13px;
     margin: 5px;
     height: 23px;
-    margin-top: 10px;
+    margin-top: 17px;
     padding: 3px;
     background-color: antiquewhite;
     border: 1px solid antiquewhite;
     box-shadow: 7px 3px 7px rgba(2, 1, 1, 0.25);
     border-radius: 3px;
 }
-.card button:hover{
-    margin: 7px;
-    background-color: #8caf8c;
+.card input:hover{
+    margin: 19px;
+    background-color: #dcdfdc;
     box-shadow: 1px black;
 }
 /*FIM CARDS*/
 
+/*INICIO FOOTER*/
 footer{
     bottom: 0;
-    height: 95px;
     background-color: #8caf8c;
     display: flex; 
-    justify-content: center;  /*coluna*/
+    justify-content: space-around;  /*coluna*/
     align-items: center; /*linha*/
 }
+footer h3{
+    font-size: 1.25em;
+    text-align: center; 
+}
 footer ul{
-    list-style-type: none;
+    list-style-type: none; 
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    align-items: center;
 }
 footer li{
-    margin: 20px;
-    align-items: center;
-    display: inline;
+    display: flex;
+    margin: 15px;
+    justify-content: start;
+}
+.contatofooter p{
+    padding: 4px;
 }
 .contatofooter img{
     height: 25px;
     width: 25px;
 }
+.contatofooter h3{
+    margin-top: 15px;
+}
+
+@media(max-width: 720px){
+    footer{
+        bottom: 0;
+        background-color: #8caf8c;
+        display: grid;
+        align-items: center; /*linha*/
+    }
+    footer h3{
+        margin: 15px;
+    }
+    footer li{
+        justify-content: center;
+    }
+    .logo2 img{
+        display: none;
+    }
+    .slider{
+        margin: auto;     
+        justify-content: center;
+    }
+}
+
+/*FIM FOOTER*/
 
