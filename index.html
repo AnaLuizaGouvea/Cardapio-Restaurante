@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
     </style>
@@ -15,11 +18,12 @@
     <header>
         <img class="logo" alt="Logo" src="ass/logo2.png">
         <nav class="navbar">
+            <span id="burguer" class="material-symbols-outlined" onclick="MenuShow()">menu</span>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Localização</a></li>
+                <li class="text-header"><a href="#">Início</a></li>
+                <li class="text-header"><a href="#">Contato</a></li>
+                <li class="text-header"><a href="#">Menu</a></li>
+                <li class="text-header"><a href="#">Localização</a></li>
             </ul>
         </nav>
     </header>
@@ -167,19 +171,19 @@
             <ul>
                 <a href="https://www.instagram.com">
                     <li>
-                        <img src="ass/instagram.png">
+                        <i class="fa fa-instagram"></i>
                         <p>Instagram</p>
                     </li>
                 </a>
                 <a href="https://www.facebook.com/">
                     <li>
-                        <img src="ass/facebook.png">
+                        <i class="	fa fa-facebook-square" style="color: #000000;"></i>
                         <p>Facebook</p>
                     </li>
                 </a>
                 <a href="https://web.whatsapp.com">
                     <li>
-                        <img src="ass/whatsapp.png">
+                        <i class="fa fa-whatsapp"></i>
                         <p>WhatsApp</p>
                     </li>
                 </a>

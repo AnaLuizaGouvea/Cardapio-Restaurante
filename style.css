@@ -15,14 +15,13 @@ header{
     display: flex; 
     justify-content: space-between;  /*coluna*/
     align-items: center; /*linha*/
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset -1px -3px 10px 0px rgba(0, 0, 0, 0.25);
     width: auto;
 }
 .logo{
     width: 50px;
     height: 50px;
     border-radius: 90px;
-    
 }
 .navbar ul{
     list-style-type: none;
@@ -30,7 +29,6 @@ header{
 .navbar li{
     display: inline;
     margin: 5px;
-    /*background-color: beige;*/
 }
 .navbar a{
     text-decoration: none;
@@ -39,12 +37,15 @@ header{
 }
 .navbar ul li:hover{
     border-radius: 3px;
-    margin: 7px;
+    margin: 5px;
     background-color: #8caf8c;
-    padding: 5px;
-    box-shadow: 1px black;
+    padding: 5px;   
 }
-
+#burguer{
+    color: antiquewhite;
+    cursor: pointer;
+    display: none;
+}
 /*FIM HEADER*/
 
 /*INICIO MAIN*/
@@ -150,28 +151,22 @@ header{
     background-color: #8caf8c;
     box-shadow: 1px black;
 }
-
 .card img{
     width: 140px;
     height: 140px;
     margin: 5px;
     padding: 5px;
 }
-
 .card h1{
     font-size: 0.875em; /* 14px dividido por 16px */
     margin-top: 0.1875rem;
-}
-    
+}   
 .card h3{
-    font-size: 0.8125em; /* 13px dividido por 16px /
-    line-height: 1.875rem; / 30px dividido por 16px */
+    font-size: 0.8125em; 
     margin-top: 0.1875rem;
-}
-    
+}   
 .card p{
-    font-size: 0.8125em; /* 13px dividido por 16px /
-    margin: 0.1875rem; / 3px dividido por 16px */
+    font-size: 0.8125em; 
     margin-top: 0.1875rem;
 }
 .card input{
@@ -221,35 +216,11 @@ footer li{
 .contatofooter p{
     padding: 4px;
 }
-.contatofooter img{
-    height: 25px;
-    width: 25px;
+.contatofooter i{
+    font-size: 25px;
 }
 .contatofooter h3{
     margin-top: 15px;
 }
-
-@media(max-width: 720px){
-    footer{
-        bottom: 0;
-        background-color: #8caf8c;
-        display: grid;
-        align-items: center; /*linha*/
-    }
-    footer h3{
-        margin: 15px;
-    }
-    footer li{
-        justify-content: center;
-    }
-    .logo2 img{
-        display: none;
-    }
-    .slider{
-        margin: auto;     
-        justify-content: center;
-    }
-}
-
 /*FIM FOOTER*/
 
